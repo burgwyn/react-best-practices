@@ -1,0 +1,22 @@
+.slideshow {
+    border: solid black 1px;
+    margin: 0 auto;
+}
+
+.slide {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    .title {
+        width: 100%;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+}
+
