@@ -12,6 +12,7 @@ const TableOfContents = () => (
         <li>Unit Tests</li>
         <li>Linting with ESLint</li>
         <li>Dev Tools</li>
+        <li>Additional Reading</li>
     </ul>
 );
 
