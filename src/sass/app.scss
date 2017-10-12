@@ -1,22 +1,44 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 .slideshow {
     border: solid black 1px;
-    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    height: 56.25%;
+    width: 100%;
 }
 
 .slide {
     display: -webkit-flex;
     display: flex;
     flex-flow: row wrap;
+    height: 400px;
     justify-content: flex-start;
 
     .title {
+        height: 0;
         width: 100%;
-    }
-
-    div {
-        width: 100px;
-        height: 100px;
-        margin: auto;
     }
 }
 
+.title-slide {
+    margin: auto;
+}
+
+.btn-paging-left {
+    top: 50%;
+    left: 10px;
+    position: absolute;
+}
+
+.btn-paging-right {
+    top: 50%;
+    right: 10px;
+    position: absolute;
+}
