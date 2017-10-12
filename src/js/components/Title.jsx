@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Title = () => (
-    <div className="slide title-slide">
-        <h1>React Best Practices</h1>
+    <div className="slide">
+        <h1 className="title-slide">React Best Practices</h1>
     </div>
 );
 
