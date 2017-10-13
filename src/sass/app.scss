@@ -18,8 +18,9 @@
     display: -webkit-flex;
     display: flex;
     flex-flow: row wrap;
-    min-height: 400px;
     justify-content: flex-start;
+    min-height: 400px;
+    padding: 0 10px;
 
     .title {
         height: 0;
