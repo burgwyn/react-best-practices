@@ -18,12 +18,36 @@
     display: -webkit-flex;
     display: flex;
     flex-flow: row wrap;
-    height: 400px;
+    min-height: 400px;
     justify-content: flex-start;
 
     .title {
         height: 0;
         width: 100%;
+    }
+
+    .body {
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        width: 100%;
+
+        .full {
+            width: 100%;
+        }
+
+        .half {
+            width: 50%;
+        }
+
+        .third {
+            width: 33%;
+        }
+
+        .quarter {
+            width: 25%;
+        }
     }
 }
 

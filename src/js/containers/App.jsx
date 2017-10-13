@@ -14,7 +14,7 @@ const App = () => (
             <TableOfContents />
         </Slide>
         <Slide title="JS vs JSX">
-            <div>
+            <div className="half">
                 <span>Files that should end with .js</span>
                 <ul>
                     <li>Redux Reducers</li>
@@ -24,7 +24,7 @@ const App = () => (
                     <li>Tests</li>
                 </ul>
             </div>
-            <div>
+            <div className="half">
                 <span>Files that should end with .jsx</span>
                 <ul>
                     <li>Components</li>
@@ -34,7 +34,7 @@ const App = () => (
             </div>
         </Slide>
         <Slide title="Container / Component Pattern">
-           <div>
+           <div className="half">
                <h2>Container Components</h2>
                <span>A container component is a React component that connects to Redux</span>
                <ul>
@@ -45,7 +45,7 @@ const App = () => (
                     <li>Have names ending with Container.jsx, ex. StyleGuideContainer.jsx</li>
                 </ul>
             </div>
-            <div>
+            <div className="half">
                 <h2>Presentation Components</h2>
                 <span>A presentational component is a generic React component that displays data</span>
                 <ul>
@@ -61,16 +61,19 @@ const App = () => (
             </div>
         </Slide>
         <Slide title="Unit Tests">
-            <p>Make a file, make a test</p>
-            <ul>
-                <li>Presentation Components require at least a render test</li>
-                <li>Container Components should be fully tested</li>
-                <li>Redux Reducers should be fully tested</li>
-                <li>Helper Files (API calls, convenience functions, etc.) should be fully tested</li>
-                <li>Additional tests are highly suggested for interactive, component-specific functionality</li>
-            </ul>
+            <div>
+                <h2>Make a file, make a test</h2>
+                <ul>
+                    <li>Presentation Components require at least a render test</li>
+                    <li>Container Components should be fully tested</li>
+                    <li>Redux Reducers should be fully tested</li>
+                    <li>Helper Files (API calls, convenience functions, etc.) should be fully tested</li>
+                    <li>Additional tests are highly suggested for interactive, component-specific functionality</li>
+                </ul>
+            </div>
         </Slide>
         <Slide title="Small Components">
+            <div>
             <h2>Components should be small and, if possible, reusable</h2>
             <span>Entire pages should not be contained in a single file</span>
             <ul>
@@ -86,12 +89,14 @@ const App = () => (
 </Code>
     <li>Every component gets its own file. No exceptions.</li>
 </ul>
+</div>
         </Slide>
         <Slide title="PropTypes &amp; DefaultProps">
         </Slide>
         <Slide title="Keep styles out of JSX">
         </Slide>
         <Slide title="No logic in render()">
+            <div className="full">
             <h2>Don’t Do it</h2>
             <span>Seriously</span>
             <ul>
@@ -110,9 +115,10 @@ const App = () => (
                 <li>Consider moving logic elsewhere in the component lifecycle</li>
                 <li>componentWillUpdate can prevent unnecessary updates</li>
             </ul>
+            </div>
         </Slide>
         <Slide title="Redux state vs component state">
-            <div>
+            <div className="half">
                 <h2>Redux state</h2>
                 <span>Application-level data</span>
                 <p>Redux state should be used for</p>
@@ -121,7 +127,7 @@ const App = () => (
                     <li>Semi-permanent data that may end up in a database</li>
                 </ul>
             </div>
-            <div>
+            <div className="half">
                 <h2>Component state</h2>
                 <span>Component-level data</span>
                 <p>Component state should be used forr</p>
@@ -132,10 +138,13 @@ const App = () => (
             </div>
         </Slide>
         <Slide title="React and Redux dev tools">
+            <div className="half">
             <h2>Chrome Extensions</h2>
             <p>Life altering goodness, free of charge in the Chrome Web Store.</p>
+            </div>
         </Slide>
         <Slide title="Unit Tests">
+            <div className="full">
             <ul>
                 <li>Container Components should be fully tested</li>
                 <li>Redux Reducers should be fully tested</li>
@@ -143,24 +152,30 @@ const App = () => (
                 <li>Presentation Components require at least a render test</li>
                 <li>Additional tests are highly suggested for interactive, component-specific functionality</li>
             </ul>
+            </div>
         </Slide>
         <Slide title="Make a MESS">
+        <div className="full">
             <ul>
                 <li>Mount</li>
                 <li>Enzyme</li>
                 <li>Shallow</li>
                 <li>Sinon</li>
             </ul>
+            </div>
         </Slide>
         <Slide title="Mocking">
+        <div className="full">
             <ul>
                 <li>Create spies for callbacks</li>
                 <li>Learn called and calledOnce</li>
                 <li>Timer events</li>
                 <li>Support for AJAX too</li>
             </ul>
+            </div>
         </Slide>
         <Slide title="Linting">
+        <div className="full">
             <ul>
                 <li>Indentation</li>
                 <li>Max line length</li>
@@ -168,8 +183,10 @@ const App = () => (
                 <li>Brackets</li>
                 <li>Comma dangle</li>
             </ul>
+            </div>
         </Slide>
         <Slide title="Additional Reading">
+        <div className="full">
             <ul>
                 <li>React’s Advanced Guides: https://facebook.github.io/react/docs/jsx-in-depth.html</li>
                 <li>https://camjackson.net/post/9-things-every-reactjs-beginner-should-know</li>
@@ -178,6 +195,7 @@ const App = () => (
                 <li>https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1</li>
                 <li>https://css-tricks.com/learning-react-container-components/</li>
             </ul>
+            </div>
         </Slide>
     </SlideShow>
 );
