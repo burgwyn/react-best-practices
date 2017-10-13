@@ -92,8 +92,61 @@ const App = () => (
 </div>
         </Slide>
         <Slide title="PropTypes &amp; DefaultProps">
+            <div className="half">
+                <h2>Bad</h2>
+                <span>Including anything like this is completely anti-pattern</span>
+                <pre>
+                    this.findDelay = typeof this.props.findDelay === 'number' ? this.props.findDelay : 500;
+                    this.options = props.gridOptions;
+                    this.options.columns = this.options.columns ? this.options.columns : [];
+                    this.options.loadCollapsed = this.options.loadCollapsed ? this.options.loadCollapsed : false;
+                    this.options.tableHeight = this.options.tableHeight ? this.options.tableHeight : 500;this.options.rowHeight = this.options.rowHeight ? this.options.rowHeight : 96;
+                    this.defaultColWidth = this.options.columns.length ? '100 / this.options.columns.length%' : null;
+                </pre>
+            </div>
+            <div className="half">
+                <h2>Good</h2>
+                <span>Use propTypes and defaultProps to specify what prop names and types your component is expecting, along with defaultProps to define them if they are not provided</span>
+                <pre>
+                    {/*import propTypes from 'prop-types';
+                    const propTypes = {
+                        findDelay: PropTypes.number,    
+                        columns: PropTypes.array,
+                        loadCollapsed: PropTypes.bool,
+                        tableHeight: PropTypes.number,
+                        rowHeight: PropTypes.number,
+                        defaultColWidth: PropTypes.number,
+                    };
+
+                    const defaultProps = {
+                        findDelay: 500,
+                        columns: [],
+                        loadCollapsed: false,
+                        tableHeight: 500,
+                        rowHeight: 96,
+                        defaultColWidth: 0
+                    };
+
+                    export default class YourComponent extends React.Component {
+                        // Your code
+                    }
+
+                    YourComponent.propTypes = propTypes;
+                    YourComponent.defaultProps = defaultProps;*/}
+                </pre>
+            </div>
         </Slide>
         <Slide title="Keep styles out of JSX">
+            <div className="full">
+                <h2>Bad</h2>
+                <span>Explicitly setting style tags of JSX components should be avoided in almost all circumstances</span>
+                <ul>
+                    <li>JSX belongs in JSX files. CSS belongs in CSS files.</li>
+                    <li>Styling rules should come from one place to act as a single source of truth.</li>
+                    <li>Use className instead of style</li>
+                    <li>You are permitted to use a style tag only when setting numeric values based on JS calculations</li>
+                </ul>
+            </div>
         </Slide>
         <Slide title="No logic in render()">
             <div className="full">
