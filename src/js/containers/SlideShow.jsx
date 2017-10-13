@@ -17,6 +17,7 @@ export default class SlideShow extends React.Component {
         super(props);
         this.state = {
             currentIndex: props.currentIndex,
+            slideCount: props.children.length,
         };
 
         this.onNext = this.onNext.bind(this);
@@ -25,11 +26,21 @@ export default class SlideShow extends React.Component {
 
     onNext(e) {
         let currentIndex = this.state.currentIndex + 1;
+
+        if (currentIndex >= this.state.slideCount) {
+            currentIndex = 0;
+        }
+
         this.setState({ currentIndex: currentIndex });
     }
 
     onPrevious(e) {
         let currentIndex = this.state.currentIndex - 1;
+
+        if (currentIndex < 0) {
+            currentIndex = 0;
+        }
+
         this.setState({ currentIndex: currentIndex });
     }
 
