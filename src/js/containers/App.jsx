@@ -60,18 +60,6 @@ const App = () => (
                 </ul>
             </div>
         </Slide>
-        <Slide title="Unit Tests">
-            <div>
-                <h2>Make a file, make a test</h2>
-                <ul>
-                    <li>Presentation Components require at least a render test</li>
-                    <li>Container Components should be fully tested</li>
-                    <li>Redux Reducers should be fully tested</li>
-                    <li>Helper Files (API calls, convenience functions, etc.) should be fully tested</li>
-                    <li>Additional tests are highly suggested for interactive, component-specific functionality</li>
-                </ul>
-            </div>
-        </Slide>
         <Slide title="Small Components">
             <div>
             <h2>Components should be small and, if possible, reusable</h2>
