@@ -114,24 +114,24 @@ const App = () => (
         </Slide>
         <Slide title="No logic in render()">
             <div className="full">
-            <h2>Don’t Do it</h2>
-            <span>Seriously</span>
-            <ul>
-                <li>Don’t change state in render</li>
-                <li>Use functions to load blocks of content</li>
-                <li>Avoid conditional rendering</li>
-                <li>Ternary operators before return are fine</li>
-                <li>Don’t need to display a component?</li>
-                <li>return null</li>
-                <li>Be mindful in your management of state</li>
-                <li>Update state in single blocks</li>
-                <li>Consider callbacks (see example)</li>
-                <li>If you require additional logic to render then you may need…</li>
-                <li>A Container</li>
-                <li>Multiple Components</li>
-                <li>Consider moving logic elsewhere in the component lifecycle</li>
-                <li>componentWillUpdate can prevent unnecessary updates</li>
-            </ul>
+                <h2>Don’t Do it</h2>
+                <span>Seriously</span>
+                <ul>
+                    <li>Don’t change state in render</li>
+                    <li>Use functions to load blocks of content</li>
+                    <li>Avoid conditional rendering</li>
+                    <li>Ternary operators before return are fine</li>
+                    <li>Don’t need to display a component?</li>
+                    <li>return null</li>
+                    <li>Be mindful in your management of state</li>
+                    <li>Update state in single blocks</li>
+                    <li>Consider callbacks (see example)</li>
+                    <li>If you require additional logic to render then you may need…</li>
+                    <li>A Container</li>
+                    <li>Multiple Components</li>
+                    <li>Consider moving logic elsewhere in the component lifecycle</li>
+                    <li>componentWillUpdate can prevent unnecessary updates</li>
+                </ul>
             </div>
         </Slide>
         <Slide title="Redux state vs component state">
@@ -180,23 +180,23 @@ const App = () => (
         </Slide>
         <Slide title="Unit Tests">
             <div className="full">
-            <ul>
-                <li>Container Components should be fully tested</li>
-                <li>Redux Reducers should be fully tested</li>
-                <li>Helper Files (API calls, convenience functions, etc.) should be fully tested</li>
-                <li>Presentation Components require at least a render test</li>
-                <li>Additional tests are highly suggested for interactive, component-specific functionality</li>
-            </ul>
+                <ul>
+                    <li>Container Components should be fully tested</li>
+                    <li>Redux Reducers should be fully tested</li>
+                    <li>Helper Files (API calls, convenience functions, etc.) should be fully tested</li>
+                    <li>Presentation Components require at least a render test</li>
+                    <li>Additional tests are highly suggested for interactive, component-specific functionality</li>
+                </ul>
             </div>
         </Slide>
         <Slide title="Make a MESS">
-        <div className="full">
-            <ul>
-                <li><h2>Mount</h2></li>
-                <li><h2>Enzyme</h2></li>
-                <li><h2>Shallow</h2></li>
-                <li><h2>Sinon</h2></li>
-            </ul>
+            <div className="full">
+                <ul>
+                    <li><h2>Mount</h2></li>
+                    <li><h2>Enzyme</h2></li>
+                    <li><h2>Shallow</h2></li>
+                    <li><h2>Sinon</h2></li>
+                </ul>
             </div>
         </Slide>
         <Slide title="Enzyme">
