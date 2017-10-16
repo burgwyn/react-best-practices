@@ -3,6 +3,7 @@ html, body {
 }
 
 body {
+    background: url('../img/iOS_texture.png');
     margin: 0;
 }
 
@@ -20,8 +21,9 @@ body {
 }
 
 .slideshow {
+    background-color: #ffffff;
     border: solid black 1px;
-    height: 56.25%;
+    height: 80%;
     width: 100%;
 }
 
@@ -84,5 +86,8 @@ body {
 }
 
 pre {
+    background-color: #000000;
+    color: green;
+    padding: 20px;
     white-space: pre-wrap;
 }
