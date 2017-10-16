@@ -137,10 +137,14 @@ const App = () => (
                     <li>Update state in single blocks</li>
                     <li>Consider callbacks</li>
                     <li>If you require additional logic to render then you may need…</li>
-                    <li>A Container</li>
-                    <li>Multiple Components</li>
+                    <ul>
+                        <li>A Container</li>
+                        <li>Multiple Components</li>
+                    </ul>
                     <li>Consider moving logic elsewhere in the component lifecycle</li>
-                    <li>componentWillUpdate can prevent unnecessary updates</li>
+                    <ul>
+                        <li>componentWillUpdate can prevent unnecessary updates</li>
+                    </ul>
                 </ul>
             </div>
         </Slide>
