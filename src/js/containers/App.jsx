@@ -92,16 +92,24 @@ const App = () => (
                 <Gist key={'d0ce1e4877d7c7e81604e0ae29db9cab'} rawUrl={'https://gist.githubusercontent.com/burgwyn/d0ce1e4877d7c7e81604e0ae29db9cab/raw/f0359b262388d9d97b40e756280c3529857c7252/GoodPropTypes.jsx'} />
             </div>
         </Slide>
-        <Slide title="Keep styles out of JSX">
+        <Slide title="Keep styles out of JSX - Bad">
             <div className="full">
-                <h2>Bad</h2>
                 <span>Explicitly setting style tags of JSX components should be avoided in almost all circumstances</span>
                 <ul>
                     <li>JSX belongs in JSX files. CSS belongs in CSS files.</li>
                     <li>Styling rules should come from one place to act as a single source of truth.</li>
                     <li>Use className instead of style</li>
-                    <li>You are permitted to use a style tag only when setting numeric values based on JS calculations</li>
+                    <ul>
+                        <li>You are permitted to use a style tag only when setting numeric values based on JS calculations</li>
+                    </ul>
                 </ul>
+                <Gist key={'268611e19e41e1ff2490bb9c5d62ff06'} rawUrl="https://gist.githubusercontent.com/burgwyn/268611e19e41e1ff2490bb9c5d62ff06/raw/5439b7b48f4ac1add5019f7c74365deb9920c5bb/BadStyles.jsx" />
+            </div>
+        </Slide>
+        <Slide title="Keep styles out of JSX - Good">
+            <div className="full">
+                <span>Conditionally including classes that add appropriate styling</span>
+                <Gist key={'0f7776d41dc8696ac7cdf8645b558147'} rawUrl="https://gist.githubusercontent.com/burgwyn/0f7776d41dc8696ac7cdf8645b558147/raw/e67a258bc644a9187641edd72680da07b26960b3/GoodStyles.jsx" />
             </div>
         </Slide>
         <Slide title="No logic in render()">
@@ -184,25 +192,27 @@ const App = () => (
             </div>
         </Slide>
         <Slide title="Linting">
-        <div className="full">
-            <ul>
-                <li>Indentation</li>
-                <li>Max line length</li>
-                <li>Quotes</li>
-                <li>Brackets</li>
-                <li>Comma dangle</li>
-            </ul>
+            <div className="full">
+                <h2>ESLint</h2>
+                <span>ESLint is a tool for identifying and reporting patterns in JavaScript files.  It can identify potential bugs and help contribute to a more consistent coding style.</span>
+                <ul>
+                    <li>Indentation</li>
+                    <li>Max line length</li>
+                    <li>Quotes</li>
+                    <li>Brackets</li>
+                    <li>Comma dangle</li>
+                </ul>
             </div>
         </Slide>
         <Slide title="Additional Reading">
         <div className="full">
             <ul>
-                <li>React’s Advanced Guides: https://facebook.github.io/react/docs/jsx-in-depth.html</li>
-                <li>https://camjackson.net/post/9-things-every-reactjs-beginner-should-know</li>
-                <li>https://medium.com/front-end-hacking/writing-clean-and-concise-react-components-by-making-full-use-of-es6-7-features-and-the-container-4ba0473b7b01</li>
-                <li>https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44</li>
-                <li>https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1</li>
-                <li>https://css-tricks.com/learning-react-container-components/</li>
+                <li>React’s Advanced Guides: <a href="https://facebook.github.io/react/docs/jsx-in-depth.html">https://facebook.github.io/react/docs/jsx-in-depth.html</a></li>
+                <li><a href="https://camjackson.net/post/9-things-every-reactjs-beginner-should-know">https://camjackson.net/post/9-things-every-reactjs-beginner-should-know</a></li>
+                <li><a href="https://medium.com/front-end-hacking/writing-clean-and-concise-react-components-by-making-full-use-of-es6-7-features-and-the-container-4ba0473b7b01">https://medium.com/front-end-hacking/writing-clean-and-concise-react-components-by-making-full-use-of-es6-7-features-and-the-container-4ba0473b7b01</a></li>
+                <li><a href="https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44">https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44</a></li>
+                <li><a href="https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1">https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1</a></li>
+                <li><a href="https://css-tricks.com/learning-react-container-components/">https://css-tricks.com/learning-react-container-components/</a></li>
             </ul>
             </div>
         </Slide>
