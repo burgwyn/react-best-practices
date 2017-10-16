@@ -233,13 +233,16 @@ const App = () => (
             </div>
         </Slide>
         <Slide title="Sinon">
-        <div className="full">
-            <ul>
-                <li>Create spies for callbacks</li>
-                <li>Learn called and calledOnce</li>
-                <li>Timer events</li>
-                <li>Support for AJAX too</li>
-            </ul>
+            <div className="full">
+                <ul>
+                    <li>Create spies for callbacks</li>
+                    <ul>    
+                        <li>Learn called and calledOnce</li>
+                    </ul>
+                    <li>Timer events</li>
+                    <li>Support for AJAX too</li>
+                </ul>
+                <Gist key={'e539e86390b0a35870b1f4c1842786f0'} rawUrl="https://gist.githubusercontent.com/burgwyn/e539e86390b0a35870b1f4c1842786f0/raw/216e68af9efdd4358554a709a573383140b67db5/SinonExample.jsx" />
             </div>
         </Slide>
         <Slide title="Linting">
