@@ -70,7 +70,11 @@ body {
 }
 
 .title-slide {
-    margin: auto;
+    margin: 18% auto;
+    height: fit-content;
+    align-self: center;
+    width: fit-content;
+    flex-direction: column;
     text-align: center;
 }
 
