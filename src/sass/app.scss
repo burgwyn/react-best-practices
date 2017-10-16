@@ -30,15 +30,18 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    min-height: 400px;
     padding: 0 10px;
 
     .title {
-        height: 0;
         width: 100%;
+
+        h1 {
+            -webkit-margin-after: 0;
+        }
     }
 
     .body {
+        align-items: flex-start;
         display: -webkit-flex;
         display: flex;
         flex-flow: row wrap;
