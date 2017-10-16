@@ -1,7 +1,6 @@
 import React from 'react';
 
 import '../../sass/app.scss';
-import Code from '../components/Code';
 import Gist from '../components/Gist';
 import Slide from '../components/Slide';
 import TableOfContents from '../components/TableOfContents';
