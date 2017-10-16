@@ -112,6 +112,14 @@ const App = () => (
                 <Gist key={'0f7776d41dc8696ac7cdf8645b558147'} rawUrl="https://gist.githubusercontent.com/burgwyn/0f7776d41dc8696ac7cdf8645b558147/raw/e67a258bc644a9187641edd72680da07b26960b3/GoodStyles.jsx" />
             </div>
         </Slide>
+        <Slide title="Index as Key">
+            <div className="half">
+                <h2>Bad</h2>
+                <Gist key={'48343a7bba034e823c2c930a1dc178be'} rawUrl="https://gist.githubusercontent.com/burgwyn/48343a7bba034e823c2c930a1dc178be/raw/b06a130ff76fb8ffc4cccfdad0816db79fef55cd/IndexAsKeyBad.jsx" />
+                <h2>Good</h2>
+                <Gist key={'2e8f0d5ee83dcb1fa6661da9b456d9c6'} rawUrl="https://gist.githubusercontent.com/burgwyn/2e8f0d5ee83dcb1fa6661da9b456d9c6/raw/5c47976b0bb131caacb0f7e998c2e563450e66eb/IndexAsKeyGood.jsx" />
+            </div>
+        </Slide>
         <Slide title="No logic in render()">
             <div className="full">
                 <h2>Don’t Do it</h2>
@@ -122,10 +130,12 @@ const App = () => (
                     <li>Avoid conditional rendering</li>
                     <li>Ternary operators before return are fine</li>
                     <li>Don’t need to display a component?</li>
-                    <li>return null</li>
+                        <ul>
+                            <li>return null</li>
+                        </ul>
                     <li>Be mindful in your management of state</li>
                     <li>Update state in single blocks</li>
-                    <li>Consider callbacks (see example)</li>
+                    <li>Consider callbacks</li>
                     <li>If you require additional logic to render then you may need…</li>
                     <li>A Container</li>
                     <li>Multiple Components</li>
