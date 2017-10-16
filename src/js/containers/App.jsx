@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../../sass/app.scss';
 import Code from '../components/Code';
+import Gist from '../components/Gist';
 import Slide from '../components/Slide';
 import TableOfContents from '../components/TableOfContents';
 import Title from '../components/Title';
@@ -50,78 +51,46 @@ const App = () => (
                 <span>A presentational component is a generic React component that displays data</span>
                 <ul>
                     <li>Presentational components are “dumb” in that they don’t know where the data from props is coming from</li>
-                    <li>Do not interface with Redux
-                        Instead, they call methods in the parent component, received via props, that interface with Redux
-                        Make minimal use of state</li>
-                <li>Render as many Presentation Components and additional Container Components as necessary</li>
-                <li>Render DOM</li>
-                <li>Are named after either their parent, if their parent is a Container, or their function</li>
-                Ex. StyleGuideContainer.jsx renders StyleGuide.jsx
+                    <li>Do not interface with Redux</li>
+                        <ul>
+                            <li>Instead, they call methods in the parent component, received via props, that interface with Redux</li>
+                            <li>Make minimal use of state</li>
+                        </ul>
+                    <li>Render as many Presentation Components and additional Container Components as necessary</li>
+                    <li>Render DOM</li>
+                    <li>Are named after either their parent, if their parent is a Container, or their function, ex. StyleGuideContainer.jsx renders StyleGuide.jsx</li>
                 </ul>
             </div>
         </Slide>
         <Slide title="Small Components">
             <div>
-            <h2>Components should be small and, if possible, reusable</h2>
-            <span>Entire pages should not be contained in a single file</span>
-            <ul>
-<li>A React component should do one thing</li>
-<li>If it does more than one thing, break it up into multiple components that each do one thing</li>
-<li>Your components should be smaller than you think</li>
-<li>Small components help with understanding, testing, and maintaining</li>
-<li>If your component just needs to render data, consider making it a stateless functional component, which is a component as a function of props</li>
-  <Code>
-  const HelloWorld = ({name}) => (
-    <div>{`Hi ${name}`}</div>
-);
-</Code>
-    <li>Every component gets its own file. No exceptions.</li>
-</ul>
-</div>
-        </Slide>
-        <Slide title="PropTypes &amp; DefaultProps">
-            <div className="half">
-                <h2>Bad</h2>
-                <span>Including anything like this is completely anti-pattern</span>
-                <pre>
-                    this.findDelay = typeof this.props.findDelay === 'number' ? this.props.findDelay : 500;
-                    this.options = props.gridOptions;
-                    this.options.columns = this.options.columns ? this.options.columns : [];
-                    this.options.loadCollapsed = this.options.loadCollapsed ? this.options.loadCollapsed : false;
-                    this.options.tableHeight = this.options.tableHeight ? this.options.tableHeight : 500;this.options.rowHeight = this.options.rowHeight ? this.options.rowHeight : 96;
-                    this.defaultColWidth = this.options.columns.length ? '100 / this.options.columns.length%' : null;
-                </pre>
+                <h2>Components should be small and, if possible, reusable</h2>
+                <span>Entire pages should not be contained in a single file</span>
+                <ul>
+                    <li>A React component should do one thing</li>
+                    <li>If it does more than one thing, break it up into multiple components that each do one thing</li>
+                    <li>Your components should be smaller than you think</li>
+                    <li>Small components help with understanding, testing, and maintaining</li>
+                    <li>Every component gets its own file. No exceptions.</li>
+                </ul>
             </div>
-            <div className="half">
-                <h2>Good</h2>
-                <span>Use propTypes and defaultProps to specify what prop names and types your component is expecting, along with defaultProps to define them if they are not provided</span>
-                <pre>
-                    {/*import propTypes from 'prop-types';
-                    const propTypes = {
-                        findDelay: PropTypes.number,    
-                        columns: PropTypes.array,
-                        loadCollapsed: PropTypes.bool,
-                        tableHeight: PropTypes.number,
-                        rowHeight: PropTypes.number,
-                        defaultColWidth: PropTypes.number,
-                    };
-
-                    const defaultProps = {
-                        findDelay: 500,
-                        columns: [],
-                        loadCollapsed: false,
-                        tableHeight: 500,
-                        rowHeight: 96,
-                        defaultColWidth: 0
-                    };
-
-                    export default class YourComponent extends React.Component {
-                        // Your code
-                    }
-
-                    YourComponent.propTypes = propTypes;
-                    YourComponent.defaultProps = defaultProps;*/}
-                </pre>
+        </Slide>
+        <Slide title="Stateless Functional Components">
+            <div className="full">
+                <span>Less is more</span>
+                <Gist key={'83017ef672391bcb8c1061ea0dec5df6'} rawUrl={'https://gist.githubusercontent.com/burgwyn/83017ef672391bcb8c1061ea0dec5df6/raw/1370e61b0cfa50e2568826899d3037df15af4347/StatelessFunctionalComponent.jsx'} />
+            </div>
+        </Slide>
+        <Slide title="PropTypes &amp; DefaultProps - Bad">
+            <div className="full">
+                <span>Including anything like this is completely anti-pattern</span>
+                <Gist key={'de4bea5d7f3df8c6778dcd1e2c7130c6'} rawUrl={'https://gist.githubusercontent.com/burgwyn/de4bea5d7f3df8c6778dcd1e2c7130c6/raw/d327b8da50f4ddff86b80fcac1fabf8d6b97cfe6/BadPropTypes.jsx'} />
+            </div>
+        </Slide>
+        <Slide title="PropTypes &amp; DefaultProps - Good">
+            <div className="full">
+            <span>Use propTypes and defaultProps to specify what prop names and types your component is expecting, along with defaultProps to define them if they are not provided</span>
+                <Gist key={'d0ce1e4877d7c7e81604e0ae29db9cab'} rawUrl={'https://gist.githubusercontent.com/burgwyn/d0ce1e4877d7c7e81604e0ae29db9cab/raw/f0359b262388d9d97b40e756280c3529857c7252/GoodPropTypes.jsx'} />
             </div>
         </Slide>
         <Slide title="Keep styles out of JSX">
