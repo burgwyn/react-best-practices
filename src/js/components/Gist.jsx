@@ -25,18 +25,9 @@ export default class Gist extends Component {
     }
 
     render() {
-
-        const content = this.state.content;
-
-        let output = null;
-        
-        if (this.state.content)  {
-            output = <pre>${this.state.content}</pre>;
-        }
-
         return (
             <pre>
-            {content}
+                {this.state.content}
             </pre>
         );
     }
