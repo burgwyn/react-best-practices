@@ -23,7 +23,7 @@ body {
 .slideshow {
     background-color: #ffffff;
     border: solid black 1px;
-    height: 80%;
+    height: 85%;
     width: 100%;
 }
 
@@ -47,6 +47,7 @@ body {
         display: -webkit-flex;
         display: flex;
         flex-flow: row wrap;
+        font-size: larger;
         justify-content: flex-start;
         width: 100%;
 
