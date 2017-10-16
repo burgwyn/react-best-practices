@@ -155,9 +155,27 @@ const App = () => (
             </div>
         </Slide>
         <Slide title="React and Redux dev tools">
-            <div className="half">
-            <h2>Chrome Extensions</h2>
-            <p>Life altering goodness, free of charge in the Chrome Web Store.</p>
+            <div className="full">
+                <h2>Chrome Extensions</h2>
+                <span>Life altering goodness, free of charge in the Chrome Web Store.</span>
+                <ul>
+                    <li>React Dev Tools</li>
+                    <ul>
+                        <li>
+                            <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en">
+                            https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
+                            </a>
+                        </li>
+                    </ul>
+                    <li>Redux Dev Tools</li>
+                    <ul>
+                        <li>
+                            <a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en">
+                                https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
             </div>
         </Slide>
         <Slide title="Unit Tests">
@@ -181,7 +199,23 @@ const App = () => (
             </ul>
             </div>
         </Slide>
-        <Slide title="Mocking">
+        <Slide title="Enzyme">
+            <div className="full">
+                <h2>Enzyme</h2>
+                <span>Suite of test utilities from AirBnB</span>
+                <ul>
+                    <li>Shallow – lightweight rendering</li>
+                    <ul>
+                        <li>Great for a single component</li>
+                    </ul>
+                    <li>Mount – deeper rendering</li>
+                    <ul>
+                        <li>Ideal for containers</li>
+                    </ul>
+                </ul>
+            </div>
+        </Slide>
+        <Slide title="Sinon">
         <div className="full">
             <ul>
                 <li>Create spies for callbacks</li>
