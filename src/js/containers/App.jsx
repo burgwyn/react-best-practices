@@ -192,15 +192,15 @@ const App = () => (
         <Slide title="Make a MESS">
         <div className="full">
             <ul>
-                <li>Mount</li>
-                <li>Enzyme</li>
-                <li>Shallow</li>
-                <li>Sinon</li>
+                <li><h2>Mount</h2></li>
+                <li><h2>Enzyme</h2></li>
+                <li><h2>Shallow</h2></li>
+                <li><h2>Sinon</h2></li>
             </ul>
             </div>
         </Slide>
         <Slide title="Enzyme">
-            <div className="full">
+            <div className="half">
                 <h2>Enzyme</h2>
                 <span>Suite of test utilities from AirBnB</span>
                 <ul>
@@ -213,6 +213,9 @@ const App = () => (
                         <li>Ideal for containers</li>
                     </ul>
                 </ul>
+            </div>
+            <div className="half">
+                <Gist key={'619b1b9861dfe121c69a75f63c41cfdb'} rawUrl="https://gist.githubusercontent.com/burgwyn/619b1b9861dfe121c69a75f63c41cfdb/raw/7ef0efbbfcdf3e2f8ae3d2fc4c92b07ca548633e/SampleUnitTests.jsx" />
             </div>
         </Slide>
         <Slide title="Sinon">
