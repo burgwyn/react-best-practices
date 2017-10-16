@@ -241,16 +241,21 @@ const App = () => (
                 </ul>
             </div>
         </Slide>
+        <Slide title="Source">
+            <div className="title-slide">
+                <h2><a href="https://github.com/burgwyn/react-best-practices">https://github.com/burgwyn/react-best-practices</a></h2>
+            </div>
+        </Slide>
         <Slide title="Additional Reading">
-        <div className="full">
-            <ul>
-                <li>React’s Advanced Guides: <a href="https://facebook.github.io/react/docs/jsx-in-depth.html">https://facebook.github.io/react/docs/jsx-in-depth.html</a></li>
-                <li><a href="https://camjackson.net/post/9-things-every-reactjs-beginner-should-know">https://camjackson.net/post/9-things-every-reactjs-beginner-should-know</a></li>
-                <li><a href="https://medium.com/front-end-hacking/writing-clean-and-concise-react-components-by-making-full-use-of-es6-7-features-and-the-container-4ba0473b7b01">https://medium.com/front-end-hacking/writing-clean-and-concise-react-components-by-making-full-use-of-es6-7-features-and-the-container-4ba0473b7b01</a></li>
-                <li><a href="https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44">https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44</a></li>
-                <li><a href="https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1">https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1</a></li>
-                <li><a href="https://css-tricks.com/learning-react-container-components/">https://css-tricks.com/learning-react-container-components/</a></li>
-            </ul>
+            <div className="full">
+                <ul>
+                    <li>React’s Advanced Guides: <a href="https://facebook.github.io/react/docs/jsx-in-depth.html">https://facebook.github.io/react/docs/jsx-in-depth.html</a></li>
+                    <li><a href="https://camjackson.net/post/9-things-every-reactjs-beginner-should-know">https://camjackson.net/post/9-things-every-reactjs-beginner-should-know</a></li>
+                    <li><a href="https://medium.com/front-end-hacking/writing-clean-and-concise-react-components-by-making-full-use-of-es6-7-features-and-the-container-4ba0473b7b01">https://medium.com/front-end-hacking/writing-clean-and-concise-react-components-by-making-full-use-of-es6-7-features-and-the-container-4ba0473b7b01</a></li>
+                    <li><a href="https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44">https://medium.com/javascript-scene/10-tips-for-better-redux-architecture-69250425af44</a></li>
+                    <li><a href="https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1">https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1</a></li>
+                    <li><a href="https://css-tricks.com/learning-react-container-components/">https://css-tricks.com/learning-react-container-components/</a></li>
+                </ul>
             </div>
         </Slide>
     </SlideShow>
